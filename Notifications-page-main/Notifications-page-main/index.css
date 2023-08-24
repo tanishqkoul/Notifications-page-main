@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: "Plus Jakarta Sans";
+    background-color: hsl(210, 60%, 98%);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+.panel{
+    position: relative;
+    /* border: solid black 2px; */
+    width: 45vw;
+    margin: 5% auto;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 0 10px rgb(224, 224, 224);
+    border-radius: 5px;
+    /* margin : x auto : important to bring page in the middle */
+}
+
+.header{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.notification{
+    background-color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.num{
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    padding: 0px 6px;
+    border-radius: 3px;
+    margin-left: 2px;
+}
+
+#all-read{
+    cursor: pointer;
+    background-color: white;
+    color: hsl(219, 12%, 42%);
+}
+
+#all-read:hover{
+    color:hsl(219, 85%, 26%) ;
+}
+
+.messages{
+    background-color: white;
+}
+
+.message{
+    cursor: pointer;
+    padding: 1vh 1vw;
+    background-color: hsl(0, 0%, 100%) ;
+    display: flex;
+    margin: 1vh 1vw;
+    border-radius: 10px;
+}
+
+.unread{
+    background-color: hsl(211, 68%, 94%);
+}
+
+.read{
+    background-color: hsl(0, 0%, 100%);
+}
+
+img{
+    width: 37px;
+    height: 37.33px;
+}
+
+.timestamp{
+    background-color: inherit ;
+}
+
+.private{
+    /* border: solid black 1px; */
+    margin: 1vh 0;
+    border-radius: 5px;
+    padding: 2vh;
+}
+
+.dp{
+    margin-top: 2px;
+    background-color: inherit;
+    margin-right: 1vw;
+}
+
+.holder{
+    background-color: inherit;
+    margin-left: 5px;
+}
+
+.dot{
+    background-color: red;
+    margin-top: 5px;
+    margin-left: 5px;
+    top: -1px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.username{
+    font-weight: 550 ;
+}
+
+.post{
+    font-weight: 520 ;
+    color: hsl(219, 12%, 42%);
+}
+
+.group{
+    font-weight: 530;
+    color: hsl(219, 85%, 26%);
+}
+
+@media screen and (max-width: 800px){
+    .panel{
+        width : 90vw;
+    }
+}
+
+a:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.private:hover{
+    background-color:hsl(211, 68%, 94%) ;
+}
+
+.group-img{
+    margin-right: 1vw;
+    margin-left: auto;
+}

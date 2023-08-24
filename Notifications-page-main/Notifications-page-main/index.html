@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <title>Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      font-family: "Plus Jakarta";
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div class="panel">
+    <div class="header">
+      <div class="notification">
+        Notifications <a href="" class="num" id="counter">3</a>
+      </div>
+      <div id="all-read" class="unread">Mark all as read</div>
+    </div>
+    <div class="messages">
+      <div class="message unread">
+        <div class="holder">
+          <img src="./assets/images/avatar-mark-webber.webp" class="dp" alt="">
+        </div>
+        <div class="holder">
+          <a href="" class="username">
+            Mark Webber
+          </a> reacted to your recent post <a href="" class="post">My first tournament today!</a>
+          <div class="holder dot" id="dotid"></div>
+          <div class="timestamp">1m ago</div>
+        </div>
+      </div>
+
+      <div class="message unread">
+
+        <div class="holder">
+          <img src="./assets/images/avatar-angela-gray.webp" class="dp" alt="">
+        </div>
+
+        <div class="holder">
+          <a href="" class="username">
+            Angela Gray
+          </a> followed you
+          <div class="holder dot" id="dotid"></div>
+          <div class="timestamp">5m ago</div>
+        </div>
+
+
+      </div>
+
+      <div class="message unread ">
+        <div class="holder">
+          <img src="./assets/images/avatar-jacob-thompson.webp" class="dp" alt="">
+        </div>
+
+        <div class="holder">
+          <a href="" class="username">
+            Jacob Thompson
+          </a> has joined your group <a href="" class="group">Chess Club</a>
+          <div class="holder dot" id="dotid"></div>
+          <div class="timestamp">1 day ago</div>
+        </div>
+
+
+
+      </div>
+
+      <div class="message">
+        <div class="holder">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" class="dp" alt="">
+        </div>
+
+        <div class="holder">
+          <a href="" class="username">
+            Rizky Hasanuddin
+          </a> sent you a private message
+          <div class="timestamp">5 days ago</div>
+          <div class="private">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="message">
+
+        <div class="holder">
+          <img src="./assets/images/avatar-kimberly-smith.webp" class="dp" alt="">
+        </div>
+
+        <div class="holder">
+          <a href="" class="username">
+            Kimberly Smith
+          </a> commented on your picture <div class="timestamp">1 week ago</div>
+        </div>
+
+        <div class="holder group-img">
+          <img src="./assets/images/image-chess.webp" alt="">
+        </div>
+
+      </div>
+
+      <div class="message ">
+        <div class="holder">
+          <img src="./assets/images/avatar-nathan-peterson.webp" class="dp" alt="">
+        </div>
+
+        <div class="holder">
+          <a href="" class="username">
+            Nathan Peterson
+          </a> reacted to your recent post <a href="" class="post">5 end-game strategies to increase your win rate</a>
+          <div class="timestamp">2 weeks ago</div>
+        </div>
+
+      </div>
+
+      <div class="message">
+        <div class="holder">
+          <img src="./assets/images/avatar-anna-kim.webp" class="dp" alt="">
+        </div>
+
+        <div class="holder">
+          <a href="" class="username">
+            Gaurang
+          </a> left the group <a href="" class="group">Chess Club</a>
+          <div class="timestamp">2 weeks ago</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+<script src="index.js"></script>
+
+</body>
+
+</html>
